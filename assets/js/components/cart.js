@@ -184,10 +184,6 @@ function cart (db, printProducts) {
     checkout()
   })
 
-
-
-
-  
 }
 
 export default cart

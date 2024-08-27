@@ -12,7 +12,7 @@ function products(products) {
           <div class="product__image">
             <figure>
               <img src="${product.image}"
-              alt="${product.name}" 
+              alt="${product.title}" 
             </figure>
           </div>
           <div class="product__content">
@@ -25,7 +25,7 @@ function products(products) {
             <span class="product__price">$${product.price}</span>
             <span class="product__stock">Disponibles: ${product.quantity}</span>
             <h3 class="product__title">
-              ${product.name}
+              ${product.title}
             </h3>
           </div>
         </article>
@@ -35,7 +35,7 @@ function products(products) {
               <div class="product__image">
                 <figure>
                   <img src="${product.image}"
-                   alt="${product.name}" 
+                   alt="${product.title}" 
                    loading="lazy"/>
                 </figure>
                 <div class="product__buttons">
@@ -51,7 +51,7 @@ function products(products) {
               <div class="product__content">
                   <span class="product__price">$${product.price}</span>
                   <span class="product__stock">Disponibles: ${product.quantity}</span>
-                  <h3 class="product__title">${product.name}</h3>
+                  <h3 class="product__title">${product.title}</h3>
                   <p class="product__description">${product.description}</p>
               </div>
 
