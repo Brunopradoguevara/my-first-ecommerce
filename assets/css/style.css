@@ -400,6 +400,9 @@ body.dark--mode{
 
 /*************Main*************/
 /* Products  */
+.products__title.section--title{
+  margin-bottom: 1rem;
+}
 .products__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -518,6 +521,8 @@ body.dark--mode{
 .product__title {
   grid-column: span 3;
   font-weight: bolder;
+  max-height: 105.5px;
+  overflow: hidden;
 }
 
 /*************Cart*************/
@@ -605,6 +610,8 @@ body.dark--mode{
 
 .article__title {
   grid-column: span 4;
+  max-height: 105.5px;
+  overflow: hidden;
 }
 
 .article__quantity {

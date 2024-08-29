@@ -15,7 +15,7 @@ function cart (db, printProducts) {
   const countDOM = document.querySelector('.cart__count--item')
   const totalDOM = document.querySelector('.cart__total--item')
   const checkoutDOM = document.querySelector('.btn--buy')
-  
+  const cartList = document.querySelector('.cart')
 
   let cart = []
   
@@ -39,12 +39,12 @@ function cart (db, printProducts) {
           <div class="article__image">
             <img
               src="${product.image}"
-              alt="${product.name}"
+              alt="${product.title}"
             />
           </div>
           <div class="article__content">
             <h3 class="article__title">
-              ${product.name}
+              ${product.title}
             </h3>
             <span class="article__price">$${product.price}</span>
             <div class="article__quantity">
@@ -143,6 +143,10 @@ function cart (db, printProducts) {
       }
      
       modalsAlertProductBought()
+
+      
+      cartList.classList.remove('show--cart')
+
     }else{
       modalsAlertEmptyCar()
     }
@@ -183,6 +187,8 @@ function cart (db, printProducts) {
   checkoutDOM.addEventListener('click', function () {
     checkout()
   })
+
+  
 
 }
 
